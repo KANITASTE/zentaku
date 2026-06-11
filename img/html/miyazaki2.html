@@ -11,7 +11,7 @@
   <tr valign="top"> 
     <td width="136"><font color="#CCFF00"><a name="top"></a>宮崎２</font></td>
     <td colspan="2"><div align="right"> 
-        <select name="pullname">
+        <select name="pullname" id="pullname">
           <option value="#" selected>旅先指定</option>
           <option value="nara.html">奈良</option>
           <option value="fuzi.htm">富士登山</option>
@@ -26,7 +26,7 @@
           <option value="ichinoseki.html">一ノ関・酒造見学</option>
           <option value="teikoku.html">帝国ホテル東京</option>
         </select>
-        <input type="button" name="go" value="決定" onClick="location.href=pullname.options[pullname.selectedIndex].value">
+        <input type="button" name="go" value="決定" onClick="var s=document.getElementById('pullname');location.href=s.options[s.selectedIndex].value;">
       </div></td>
   </tr>
   <tr valign="top"> 
@@ -182,7 +182,7 @@
   <tr valign="top"> 
     <td><a href="#top">▲top</a></td>
     <td colspan="2"> <div align="right"> 
-        <select name="pullname2">
+        <select name="pullname2" id="pullname2">
           <option value="#" selected>旅先指定</option>
           <option value="nara.html">奈良</option>
           <option value="fuzi.htm">富士登山</option>
@@ -197,7 +197,7 @@
           <option value="ichinoseki.html">一ノ関・酒造見学</option>
           <option value="teikoku.html">帝国ホテル東京</option>
         </select>
-        <input type="button" name="go2" value="決定" onClick="location.href=pullname2.options[pullname2.selectedIndex].value">
+        <input type="button" name="go2" value="決定" onClick="var s=document.getElementById('pullname2');location.href=s.options[s.selectedIndex].value;">
       </div></td>
   </tr>
 </table>

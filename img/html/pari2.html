@@ -13,7 +13,7 @@
       <font color="#CCCCCC" size="3"> <a href="pari.html">prev&lt;&lt;</a> </font> 
       <div align="right"> </div></td>
     <td width="186"> <div align="right"> 
-        <select name="pullname">
+        <select name="pullname" id="pullname">
           <option value="#" selected>旅先指定</option>
           <option value="nara.html">奈良</option>
           <option value="fuzi.htm">富士登山</option>
@@ -31,7 +31,7 @@
           <option value="belgium.html">ベルギー</option>
           <option value="pari.html">パリ</option>
         </select>
-        <input type="button" name="go" value="決定" onClick="location.href=pullname.options[pullname.selectedIndex].value">
+        <input type="button" name="go" value="決定" onClick="var s=document.getElementById('pullname');location.href=s.options[s.selectedIndex].value;">
       </div></td>
   </tr>
   <tr valign="top"> 
